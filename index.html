@@ -25,26 +25,16 @@
       .background {
         position: absolute;
         padding: 20px;
-        min-height: 100vh;
-        min-width: 100vw;
+        height: 100vh;
+        width: 100vw;
         z-index: 1;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         z-index: 1;
         background-image: url("images/background.jpg");
       }
     </style>
-    <script>
-      function disableScroll() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0;
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${scrollTop}px`;
-        document.body.style.left = `-${scrollLeft}px`;
-      }
-      disableScroll();
-    </script>
   </head>
   <body>
     <div class="background"></div>
