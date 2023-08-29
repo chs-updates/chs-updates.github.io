@@ -7,7 +7,6 @@
         background-color: #2a2a2a;
         color: #ffffff;
         font-family: sans-serif;
-        background-image: url("images/background.jpg");
       }
       a {
         color: #add8e6;
@@ -21,10 +20,33 @@
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 10px;
+        z-index: 2;
+      }
+      .background {
+        position: absolute;
+        padding: 20px;
+        min-height: 100vh;
+        min-width: 100vw;
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
       }
     </style>
+    <script>
+      function disableScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollTop}px`;
+        document.body.style.left = `-${scrollLeft}px`;
+      }
+      disableScroll();
+    </script>
   </head>
   <body>
+    <div class="background"></div>
     <div class="elements">
       <h1>Homepage for CHS Updates</h1>
       <hr>
