@@ -3,19 +3,33 @@
   <head>
     <title>404 Page not found</title>
     <style>
-      body {
-        background-color: #2a2a2a;
+      body, html {
+        height: 100%;
+        margin: 0;
         color: #ffffff;
         font-family: sans-serif;
+        background-image: url('images/water.jpg');
       }
       a {
-        color: #add8e6;
+        color: #lightblue;
+      }
+      .elements {
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
       }
     </style>
   </head>
   <body>
-    <h1>404 Page not found</h1>
-    <hr>
-    <p>Back to <a href=/>home</a></p>
+    <div class="elements">
+      <h1>404 Page not found</h1>
+      <hr>
+      <p>The requested directory does not exist.</p>
+    </div>
   </body>
 </html>
