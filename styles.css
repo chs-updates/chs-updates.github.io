@@ -47,3 +47,20 @@ th, tr {
 a {
   color: lightblue;
 }
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+li::before {
+  content: "•";
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+
+ul ul li::before {
+  content: "◦"
+}
