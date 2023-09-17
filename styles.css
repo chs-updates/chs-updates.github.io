@@ -16,7 +16,7 @@ body, html {
   transform: translate(-50%, -50%);
   border-radius: 10px;
   z-index: 2;
-  max-height: 75vh;
+  max-height: 60vh;
   overflow: auto;
 }
 
