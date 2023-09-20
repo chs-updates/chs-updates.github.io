@@ -6,6 +6,17 @@ body, html {
   background-color: #2a2a2a;
 }
 
+.background {
+  background-image: url("images/background.jpg");
+  position: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .elements {
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -18,17 +29,6 @@ body, html {
   z-index: 2;
   max-height: 62.5vh;
   overflow: auto;
-}
-
-.background {
-  background-image: url("images/background.jpg");
-  position: fixed;
-  min-height: 100vh;
-  min-width: 100vw;
-  z-index: 1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .button {
