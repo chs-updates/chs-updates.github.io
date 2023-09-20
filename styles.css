@@ -72,5 +72,5 @@ li::before {
 }
 
 ul ul li::before {
-  content: "◦"
+  content: "◦";
 }
