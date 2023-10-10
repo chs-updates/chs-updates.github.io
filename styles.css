@@ -96,6 +96,15 @@ body {
   border-bottom-right-radius: 10px;
 }
 
+.spoiler {
+  background: black;
+  border-radius: 3px;
+}
+
+.spoiler:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
 a {
   color: lightblue;
   text-decoration: none;
