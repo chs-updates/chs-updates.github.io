@@ -98,11 +98,12 @@ body {
 
 .spoiler {
   background: black;
+  color: black;
   border-radius: 3px;
 }
 
 .spoiler:hover {
-  background: rgba(0, 0, 0, 0);
+  color: white;
 }
 
 a {
