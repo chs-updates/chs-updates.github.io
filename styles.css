@@ -107,11 +107,6 @@ body {
   color: white;
 }
 
-.list {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 a {
   color: lightblue;
   text-decoration: none;
